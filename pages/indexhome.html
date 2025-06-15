@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>OnlyNews- Главная</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+</head>
+<body>
+    <!-- Шапка-->
+    <div class="header">
+        <h1>OnlyNews</h1>
+        <p class="headerp">Портал самых горячих новостей</p>
+        <div class="top-menu">
+            <a href="#" class="menu-item active">Главная</a>
+            <a href="newpost_index.html" class="menu-item">Создать обсуждение</a>
+            <a href="account_index.html" class="menu-item">Аккаунт </a>
+        </div>
+    </div>
+    <div class="main-wrapper">
+        <!-- Левое меню-->
+        <div class="left-panel">
+            <!-- Поиск-->
+            <div class="menu-container expanded" id="menu-container">
+                <div id="toggle-button">
+                    <img src="../images/BlockHeaderIcon.png" alt="Иконка" class="small-icon">
+                    <h3>Поиск</h3>
+                </div>
+                <div class="panel-content" id="panel-content">
+                    <input type="text" id="search-input" placeholder="Найти...">
+                    <input type="submit" class="searchbutton" value="Искать" onclick="searchNews()">
+                    <div id="search-results" class="search-results"></div>
+                </div>
+            </div>
+            
+            <!-- Новости-->
+            <div class="menu-container expanded" id="news-menu">
+                <div id="news-toggle-button">
+                    <img src="../images/BlockHeaderIcon.png" alt="Иконка" class="small-icon">
+                    <h3>Лента новостей</h3>
+                </div>
+                <div class="panel-content" id="news-panel">
+                    <div class="news-item" onclick="scrollToPost('post1')"><strong>ВИЧ или предрак: Дима Билан подтвердил проблемы со здоровьем</strong></div>
+                    <div class="news-item" onclick="scrollToPost('post2')"><strong>Невеста Лепса про Киркорова: «Я никого не буду называть „королем", хотя бы потому, что он выступал перед моими родителями»</strong></div>
+                    <div class="news-item" onclick="scrollToPost('post3')"><strong>Осталась вдовой с тремя детьми. Горе Анны Табаниной — Лизы Долгорукой из «Бедной Насти»</strong></div>
+                    <div class="news-item" onclick="scrollToPost('post4')"><strong>Проклятое наследство Джуны: кого свела в могилу битва за имущество целительницы</strong></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Центральная часть с постами -->
+        <div class="center-panel">
+            <div class="posts-block">
+                <article class="post" id="post1">
+                    <div class="post-header">
+                        <h2 class="post-title"><a href="#">ВИЧ или предрак: Дима Билан подтвердил проблемы со здоровьем</a></h2>
+                    </div>
+                    <div class="post-meta-reactions">
+                        <div class="post-meta">
+                            <span>6 июня 2025</span>
+                            <span class="author-info">
+                                <img src="../images/PostAuthorIcon.png" alt="Автор" class="author-icon">
+                                <span>Автор: Максим Кулаков</span>
+                            </span>
+                        </div>
+                        <div class="post-reactions">
+                            <span class="likes-count">
+                                <img src="../images/LikeIcon.png" alt="Лайки" class="reaction-icon">
+                                <span>68</span>
+                            </span>
+                            <span class="dislikes-count">
+                                <img src="../images/DislikeIcon.png" alt="Дизлайки" class="reaction-icon">
+                                <span>37</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <img src="../images/52.jpg" class="post-image" alt="Билайн">
+                        <p>
+                            В 2022 году Дима Билан столкнулся с серьезными проблемами со здоровьем. Тогда певец не раскрывал подробности состояния, чем спровоцировал множество самых страшных предположений. 
+                            Раскрывать точный диагноз артист не стал и сейчас, но признался, что речь шла о предраковом заболевании. А вот слухи о других болезнях Дима опроверг.
+                            «Ну, во-первых, никаких у меня ВИЧ нет, извините. Об этом тоже много писали. Опять же, кишки все доставать не буду. Я абсолютно здоровый человек. Единственное — после перелома у меня система сосудов немножко на левой ноге, поехала, синяя коленка. А в остальном — прям все, слава богу, хорошо», — поделился Билан в интервью Надежде Стрелец.
+                        </p>
+                    </div>
+                </article>
+                <article class="post" id="post2">
+                <div class="post-header">
+                    <h2 class="post-title"><a href="#">Невеста Лепса про Киркорова: «Я никого не буду называть „королем", хотя бы потому, что он выступал перед моими родителями»</a></h2>
+                </div>
+                <div class="post-meta-reactions">
+                    <div class="post-meta">
+                        <span>4 июня 2025</span>
+                        <span class="author-info">
+                            <img src="../images/PostAuthorIcon.png" alt="Автор" class="author-icon">
+                            <span>Автор: Назар Лаврищев</span>
+                        </span>
+                    </div>
+                    <div class="post-reactions">
+                        <span class="likes-count">
+                            <img src="../images/LikeIcon.png" alt="Лайки" class="reaction-icon">
+                            <span>20</span>
+                        </span>
+                        <span class="dislikes-count">
+                            <img src="../images/DislikeIcon.png" alt="Дизлайки" class="reaction-icon">
+                            <span>24</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <img src="../images/Z.jpg" class="post-image" alt="Лепс">
+                    <p>
+                        В 4-м выпуске шоу «Мастер игры» неожиданно произошел конфликт между Филиппом Киркоровым и юной невестой Григория Лепса. Девушка до сих пор не может отпустить ситуацию.
+                        Филипп Киркоров появился в шоу «Мастер игры» и сразу же разругался с 19-летней Авророй Кибой. Он усомнился в том, что девушка вообще что-то из себя представляет.
+                        «Я хотел бы для себя понять — вы сюда пришли для чего? Тут собрались спортсмены, актеры, экстрасенсы — люди, которые сделали себя сами. А ты кто? Ты же понимаешь, что как личность не существуешь. Просто девушка кого-то», — обратился он к невесте Лепса.
+                    </p>
+                </div>
+            </article>
+            <article class="post" id="post3">
+                <div class="post-header">
+                    <h2 class="post-title"><a href="#">Осталась вдовой с тремя детьми. Горе Анны Табаниной — Лизы Долгорукой из «Бедной Насти»</a></h2>
+                </div>
+                <div class="post-meta-reactions">
+                    <div class="post-meta">
+                        <span>30 мая 2025</span>
+                        <span class="author-info">
+                            <img src="../images/PostAuthorIcon.png" alt="Автор" class="author-icon">
+                            <span>Автор: Марианна Бабик</span>
+                        </span>
+                    </div>
+                    <div class="post-reactions">
+                        <span class="likes-count">
+                            <img src="../images/LikeIcon.png" alt="Лайки" class="reaction-icon">
+                            <span>50</span>
+                        </span>
+                        <span class="dislikes-count">
+                            <img src="../images/DislikeIcon.png" alt="Дизлайки" class="reaction-icon">
+                            <span>3</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <img src="../images/V.jpeg" class="post-image" alt="Женщина">
+                    <p>
+                        Она росла в семье художников и всерьез планировала продолжить династию, пока не попала в драмкружок. Случайно Анна Табанина получила и приглашение на кастинг в сериал «Бедная Настя», который с блеском прошла. Но периодически артистка исчезала с экрана…
+                        В ранние годы Анна Табанина мало годилась для актерской профессии, будучи очень стеснительной. Девочка не ходила в детский сад и росла домашним ребенком: чаще всего с ней сидела бабушка Анна Алексеевна. Владимир Табанин давал дочке уроки живописи, ну а с 11 лет Аня еще и ездила на конюшню в Шушары, где занималась конкуром и ухаживала за лошадьми.
+                        Табанина с уверенностью говорила родителям, что станет художницей. С математикой у девочки не ладилось, так что в 10-й класс она не пошла. Целый год Аня моталась из Пушкина в центр Петербурга на курсы, затем сдала экзамены на пятерки, однако из-за разногласий отца с ректором художественного училища так и не поступила. Разумеется, девушка расстроилась, но со временем поняла: что ни делается — к лучшему.
+                    </p>
+                </div>
+            </article>
+            <article class="post" id="post4">
+                <div class="post-header">
+                    <h2 class="post-title"><a href="#">Проклятое наследство Джуны: кого свела в могилу битва за имущество целительницы</a></h2>
+                </div>
+                <div class="post-meta-reactions">
+                    <div class="post-meta">
+                        <span>22 мая 2025</span>
+                        <span class="author-info">
+                            <img src="../images/PostAuthorIcon.png" alt="Автор" class="author-icon">
+                            <span>Автор: Юлия Бакум</span>
+                        </span>
+                    </div>
+                    <div class="post-reactions">
+                        <span class="likes-count">
+                            <img src="../images/LikeIcon.png" alt="Лайки" class="reaction-icon">
+                            <span>67</span>
+                        </span>
+                        <span class="dislikes-count">
+                            <img src="../images/DislikeIcon.png" alt="Дизлайки" class="reaction-icon">
+                            <span>39</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <img src="../images/O.jpg" class="post-image" alt="Джуна">
+                    <p>
+                        Простой поход в магазин закончился для 65-летней Джуны госпитализацией: женщина потеряла сознание прямо на улице. Ясновидящую быстро прооперировали, но ее состояние продолжало ухудшаться на глазах.
+                        8 июня 2015 года целительница скончалась от инсульта в московской больнице. Проститься с экстрасенсом на Ваганьковское кладбище приехали 250 человек, многие из которых считали Джуну своей спасительницей. Очевидцы досконально помнят, как проходили те похороны: как и все, что связано с именем женщины, церемония не обошлась без мистики.
+                    </p>
+                </div>
+            </article>
+                
+                
+            </div>
+        </div>
+        
+        <!-- Правая панель с музыкальными премиями -->
+        <div class="right-panel">
+            <!-- Расписание музыкальных премий -->
+            <div class="menu-container expanded" id="awards-menu">
+                <div class="toggle-button" id="awards-toggle-button">
+                    <img src="../images/BlockHeaderIcon.png" alt="Иконка" class="small-icon">
+                    <h3>Музыкальные премии</h3>
+                </div>
+                <div class="panel-content" id="awards-panel">
+                    <div class="award-item">
+                        <h4>Премия "МУЗ-ТВ"</h4>
+                        <p><strong>Дата:</strong> 7 июня 2025</p>
+                        <p><strong>Место:</strong> Москва, "Олимпийский"</p>
+                        <p><strong>Номинанты:</strong> Билан, Киркоров, Little Big</p>
+                    </div>
+                    <div class="award-item">
+                        <h4>Премия "Золотой граммофон"</h4>
+                        <p><strong>Дата:</strong> 15 ноября 2025</p>
+                        <p><strong>Место:</strong> Санкт-Петербург, Ледовый дворец</p>
+                        <p><strong>Номинанты:</strong> Zivert, Моргенштерн, Гречка</p>
+                    </div>
+                    <div class="award-item">
+                        <h4>Премия "Новая волна"</h4>
+                        <p><strong>Дата:</strong> 20 августа 2025</p>
+                        <p><strong>Место:</strong> Сочи, Концертный зал "Фестивальный"</p>
+                        <p><strong>Номинанты:</strong> Молодые исполнители</p>
+                    </div>
+                    <div class="award-item">
+                        <h4>Премия "Виктория"</h4>
+                        <p><strong>Дата:</strong> 3 декабря 2025</p>
+                        <p><strong>Место:</strong> Москва, Кремлевский дворец</p>
+                        <p><strong>Номинанты:</strong> Лучшие альбомы года</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Футер остается без изменений -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <!-- Левая часть- название и кнопки-->
+            <div class="footer-left">
+                <div class="site-name">OnlyNews</div>
+                <div class="footer-buttons">
+                    <a href="account_index.html" class="footer-btn">Аккаунт</a>
+                    <a href="newpost_index.html" class="footer-btn">Создать обсуждение</a>
+                </div>
+            </div>
+            <div class="footer-center">
+                <h3>Топ активных пользователей</h3>
+                <ul class="footer-list">
+                    <li>Baby Melo (43 оценки)</li>
+                    <li>Macan (32 оценки)</li>
+                    <li><span class="adminnickname">MadKid (22 поста)</span></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h3>Крупные концерты</h3>
+                <ul class="footer-list">
+                    <li>Instasamka, Москва, 21.06.2025</li>
+                    <li>MadKid, Казань, 24.06.2025 </li>
+                    <li>Macan, Санкт-Петербург, 25.06.2025</li>
+                    <li>Mzlff, Воронеж, 27.06.2025</li>
+                    <li>Кобяков, Донецк, 29.06.2025</li>
+                </ul>
+            </div>
+            <!-- Кнопка "Наверх"-->
+            <button class="to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">НАВЕРХ ↑</button>
+        </div>
+    </footer>
+    
+    <script src="../js/script.js"></script>
+</body>
+</html>
