@@ -1,0 +1,239 @@
+/* Мобильные стили */
+@media (max-width: 768px) {
+    /* Шапка */
+    .header {
+        height: 300px;
+        padding: 20px 15px 100px;
+        font-size: 18px;
+        background-position: center;
+        border-radius: 0;
+        margin: 0;
+    }
+    
+    .header h1 {
+        font-size: 28px;
+    }
+    
+    .headerp {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    
+    .top-menu {
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .menu-item {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    /* Основная структура */
+    .main-wrapper {
+        flex-direction: column;
+        padding: 10px;
+        gap: 15px;
+    }
+    
+    .left-panel {
+        width: 100%;
+        order: 1;
+        margin-top: 20px;
+    }
+    
+    .posts-block {
+        width: 100%;
+        margin-left: 0;
+        padding: 15px;
+        order: 2;
+    }
+    
+    /* Боковые панели */
+    .menu-container {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    
+    /* Посты */
+    .post {
+        padding: 15px;
+        margin: 20px 0;
+    }
+    
+    .post-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .post-title {
+        font-size: 20px;
+    }
+    
+    .post-title a {
+        font-size: 20px;
+    }
+    
+    .post-reactions {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    .post-content {
+        flex-direction: column;
+    }
+    
+    .post-image {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .post-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        font-size: 14px;
+    }
+    
+    /* Формы */
+    .post-form, .account-form {
+        padding: 15px;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .form-control, textarea.form-control {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .submit-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    /* Футер */
+    .site-footer {
+        padding: 20px 10px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .footer-left, .footer-center, .footer-right {
+        min-width: 100%;
+        text-align: center;
+    }
+    
+    .footer-buttons {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    
+    .footer-list {
+        margin-bottom: 15px;
+    }
+    
+    /* Элементы новостей */
+    .news-item {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    /* Расписание премий */
+    .award-item {
+        padding: 10px 0;
+    }
+    
+    .award-item h4 {
+        font-size: 16px;
+    }
+    
+    .award-item p {
+        font-size: 13px;
+    }
+}
+
+/* Дополнительные стили для очень маленьких экранов */
+@media (max-width: 480px) {
+    .header {
+        height: 250px;
+        padding-bottom: 80px;
+    }
+    
+    .header h1 {
+        font-size: 24px;
+    }
+    
+    .headerp {
+        font-size: 16px;
+    }
+    
+    .menu-item {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    
+    .post-title a {
+        font-size: 18px;
+    }
+    
+    .post-content p {
+        font-size: 14px;
+    }
+    
+    .likes-count, .dislikes-count {
+        font-size: 14px;
+        padding: 3px 8px;
+    }
+    
+    .reaction-icon {
+        width: 16px;
+        height: 16px;
+    }
+    
+    /* Форма создания аккаунта */
+    .account-form h2 {
+        font-size: 20px;
+    }
+    
+    .password-hint {
+        font-size: 11px;
+    }
+    
+    .login-link {
+        font-size: 14px;
+    }
+    
+    /* Кнопка наверх */
+    .to-top-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Горизонтальная ориентация на мобильных */
+@media (max-width: 768px) and (orientation: landscape) {
+    .header {
+        height: 200px;
+        padding-bottom: 60px;
+    }
+    
+    .posts-block {
+        padding: 10px;
+    }
+    
+    .post {
+        padding: 10px;
+    }
+    
+    .post-title a {
+        font-size: 18px;
+    }
+}
